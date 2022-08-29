@@ -1,0 +1,37 @@
+*Application developed with the following technologies:
+JAVA JDK 11
+MAVEN
+SPRING BOOT 
+SPRING DATA JPA
+MYSQL
+
+*Database configuration located in application.properties file
+
+*After starting the application, it can be accessed through the url: localhost:1111/get_all_people
+
+*Insertions can be done through the url(POST):localhost:1111/person
+
+** Insertions must be performed following the model below:
+{
+    "id": 00,
+    "birthday": "dd/MM/yyyy",
+    "name": "StringName",
+    "nationality_social": StringNationality,
+    "security_number_job": 000000
+}
+
+* Query "Find ALL" database(Get): localhost:1111/persons
+
+* Query "Find By Id" database(Get): localhost:1111/person/{id}   ---   where {id} should be replaced by the registration identifier code.
+
+* Deletion of information in the database(DEL): localhost:1111/person/{id}  ---   where {id} should be replaced by the registration identifier code.
+
+*Query "Find By Id MinimumAgeDifference" database(Get): localhost:1111/person/{id}/minimumAgeDifference  ---   where {id} should be replaced by the registration identifier code.
+
+- person: which shall be the person referenced by {personId}
+- person2: person whose birthday is closest to person
+- ageDifference: the age difference between person1 and person2, computed in days
+
+
+
+
